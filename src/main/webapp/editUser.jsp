@@ -13,15 +13,3 @@
     <form action="user" method="POST">
         <input type="hidden" name="action" value="update">
         <input type="hidden" name="id" value="${user.id}">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="fname" value="${user.fname}" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="${user.email}" required>
-        <br><br>
-        <input type="submit" value="Update User">
-    </form>
-    <br>
-    <a href="user">Back to User List</a>
-</body>
-</html>
