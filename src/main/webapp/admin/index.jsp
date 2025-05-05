@@ -108,7 +108,7 @@
                 <span class="count">12</span>
             </a>
             <a href="#" class="profile">
-                <img src="${pageContext.request.contextPath}/images/logo.png" alt="Profile" onerror="this.onerror=null;this.src='https://via.placeholder.com/40?text=U'">
+                <img src="${pageContext.request.contextPath}/assets/11539820.png" alt="Profile" onerror="this.onerror=null;this.src='https://via.placeholder.com/40?text=U'">
                 <span>${sessionScope.fullName}</span>
             </a>
         </nav>

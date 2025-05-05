@@ -103,8 +103,8 @@ public class UserLoginServlet extends HttpServlet {
             case "admin":
                 redirectPage = "Adminview";
                 break;
-            case "employee":
-                redirectPage = "HomePage.jsp";
+            case "customer":
+                redirectPage = "LHomePage.jsp";
                 break;
             case "premium":
                 redirectPage = "PremiumHome.jsp";

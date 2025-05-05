@@ -10,19 +10,22 @@ public class User {
     private String email;
     private String password;
     private String userRole;
+    private String filename;  // New field for profile picture filename
     private int loginAttempts;
     private Timestamp lastFailedLogin;
 
     // Constructors
     public User() {}
 
-    public User(String fname, String lname, String phone, String email, String password, String userRole) {
+    public User(String fname, String lname, String phone, String email, 
+               String password, String userRole, String filename) {
         this.fname = fname;
         this.lname = lname;
         this.phone = phone;
         this.email = email;
         this.password = password;
         this.userRole = userRole;
+        this.filename = filename;
     }
 
     // Getters and Setters
@@ -47,9 +50,17 @@ public class User {
     public String getUserRole() { return userRole; }
     public void setUserRole(String userRole) { this.userRole = userRole; }
     
+    public String getFilename() { return filename; }
+    public void setFilename(String filename) { this.filename = filename; }
+    
     public int getLoginAttempts() { return loginAttempts; }
     public void setLoginAttempts(int loginAttempts) { this.loginAttempts = loginAttempts; }
     
     public Timestamp getLastFailedLogin() { return lastFailedLogin; }
     public void setLastFailedLogin(Timestamp lastFailedLogin) { this.lastFailedLogin = lastFailedLogin; }
+
+    // Optional: Helper method to get full name
+    public String getFullName() {
+        return fname + " " + lname;
+    }
 }
